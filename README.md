@@ -1,7 +1,13 @@
 # js-post-ui
 
-1. Create project
-   npm init vite@latest js-post-ui -- --template vanilla
+## Create project
 
-2. Run project
-   npm run dev
+```bash
+npm init vite@latest js-post-ui -- --template vanilla
+```
+
+## Run project
+
+```bash
+npm run dev
+```
