@@ -7,8 +7,8 @@ async function main() {
     _page: 1,
     _limit: 5,
   };
-  const response = await postApi.getAll(queryParams);
-  console.log(response);
+  const data = await postApi.getAll(queryParams);
+  console.log(data);
 }
 
 main();
