@@ -150,9 +150,23 @@
         <div class="container">
           <h1 class="with-underline text-center">Latest posts</h1>
 
+          <!--Search box-->
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="search">Search</span>
+            </div>
+            <input 
+              id="searchInput" 
+              type="text" 
+              class="form-control" 
+              placeholder="search by post title" 
+              aria-label="search" 
+              aria-describedby="search"
+            />
+          </div>
+
           <!-- Post list -->
-          <ul id="postList" class="row posts-list justify-content-center">
-          </ul>
+          <ul id="postList" class="row posts-list justify-content-center ps-0"></ul>
 
           <!-- Posts pagination -->
           <nav class="posts-nav" aria-label="Posts navigation">
