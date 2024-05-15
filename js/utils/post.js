@@ -35,6 +35,14 @@ export function createPostElement(post) {
     }
 
     // attach events
+    // go to post detail when click on div.post-item
+    const postItemElement = liElement.firstElementChild;
+    if (postItemElement) {
+      postItemElement.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.location.assign(`/post-detail.html?id=${post.id}`);
+      });
+    }
 
     return liElement;
   } catch (error) {
