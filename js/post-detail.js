@@ -1,6 +1,7 @@
 import dayjs from 'dayjs';
 import postApi from './api/postApi';
 import { setTextContent } from './utils';
+import { registerLightBox } from './utils/lightbox';
 
 function renderPostDetail(post) {
   if (!post) return;
@@ -40,6 +41,8 @@ function renderPostDetail(post) {
 }
 
 (async () => {
+  registerLightBox();
+
   try {
     // get post id from URL
     const searchParams = new URLSearchParams(window.location.search);
